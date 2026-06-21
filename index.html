@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz Día Papá</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#87CEEB,#ffffff);
+    text-align:center;
+    padding:40px;
+}
+
+h1{
+    color:#003366;
+}
+
+button{
+    padding:15px 30px;
+    font-size:20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:#007bff;
+    color:white;
+    margin-top:20px;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+img{
+    max-width:700px;
+    width:90%;
+    border-radius:15px;
+    margin-top:20px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+.oculto{
+    display:none;
+}
+
+#mensajeFinal{
+    font-size:28px;
+    color:#d60000;
+    margin-top:30px;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Feliz diaa</h1>
+<h2>De parte de valentin</h2>
+<h3>Espero que la estes pasando lindo</h3>
+
+<button id="boton1">tocame</button>
+
+<div id="parte2" class="oculto">
+    <br>
+    <img src="familia.jpg.jpeg" alt="Foto familiar">
+    <br>
+    <button id="boton2">Tocame de vuelta</button>
+</div>
+
+<div id="mensajeFinal" class="oculto">
+    Fijate entre los peluches de la sala de juegos q hay regalitos
+</div>
+
+<script>
+document.getElementById("boton1").onclick = function(){
+    document.getElementById("parte2").classList.remove("oculto");
+    this.style.display = "none";
+};
+
+document.getElementById("boton2").onclick = function(){
+    document.getElementById("mensajeFinal").classList.remove("oculto");
+    this.style.display = "none";
+};
+</script>
+
+</body>
+</html>
